@@ -3,6 +3,7 @@ logs
 *.log
 config
 # Runtime data
+*.json
 pids
 *.pid
 *.seed
