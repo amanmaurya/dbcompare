@@ -1,0 +1,36 @@
+{
+  "name": "dbdiff",
+  "version": "0.5.3",
+  "description": "Compares two tables/database and prints alter script for table only",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc --reporter=lcov npm test && nyc report"
+  },
+  "keywords": [
+    "pg",
+    "postgresql",
+    "diff",
+    "database"
+  ],
+  "dependencies": {
+    "dedent": "^0.6.0",
+    "mysql": "^2.10.2",
+    "pg": "^6.0.0",
+    "pync": "^1.0.1",
+    "underscore": "^1.8.3",
+    "yargs": "^3.29.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "nyc": "^3.2.2",
+    "standard": "^7.0.1"
+  },
+  "bin": {
+    "dbdiff": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
