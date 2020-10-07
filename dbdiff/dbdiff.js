@@ -256,9 +256,12 @@ class DbDiff {
       var db1 = results[0]
       var db2 = results[1]
       console.log(db2.tables[0].name,db1.tables[0].name)
-      db2.tables[0].name=db1.tables[0].name
+      if (db2.tables[0]==1 &&db1.tables[0]==1) 
+      {
+        db2.tables[0].name=db1.tables[0].name
+      }
       // for (var i = 0; i < db2.tables.length-1; i++) {
-
+      
       //   db2.tables[i].name=db2.tables[0].name+'_d';
       // }
 

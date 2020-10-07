@@ -30,6 +30,7 @@ console.log(target,source)
 //         table:'slr_order_master_d'
 
 //       }
+// node app
 
 var diff = new dbdiff.DbDiff()
 
